@@ -1,83 +1,194 @@
 <!DOCTYPE html>
-<html lang="ua">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <!-- Шапка сайта -->
     <header>
-        <!--якщо лого з картинкою а не просто текст 
+      <!--якщо лого з картинкою а не просто текст 
             <a href="/">
             <img src="./images/logo.svg" alt="Логотип компании" />
             photo
           </a> -->
-        <a href="/" target="_blank" rel="noopener noreferrer">WebStudio</a>
-        <nav>
-            <ul>
-                <li><a href="" >Студія</a></li>
-                <li><a href="" >Портфоліо</a></li>
-                <li><a href="" >Контакти</a></li>
-            </ul>
-        </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380674567231">+380674567231</a></li>
+      <a class="logo link" href="/" target="_blank" rel="noopener noreferrer"
+        ><span>WEB</span>STUDIO</a
+      >
+      <nav>
+        <ul class="site-nav list">
+          <li><a class="link" href="">Studio</a></li>
+          <li><a class="link" href="">Portfolio</a></li>
+          <li><a class="link" href="">Contacts</a></li>
         </ul>
+      </nav>
+      <ul class="contact-nav list">
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="link" href="tel:+380674567231">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
     </header>
     <main>
-        <!-- Герой (баннер) -->
-        <section>
-            <h1>ЕФЕКТИВНІ РІШЕННЯ <br />
-                ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <a href="" target="_blank" rel="noopener noreferrer">Замовити послугу</a>
-        </section>
+      <!-- Герой (баннер) -->
+      <section class="hero">
+        <h1 class="hero-title">
+          Effective Solutions <br />
+          for Your Business
+        </h1>
+        <a class="button link" href="" target="_blank" rel="noopener noreferrer"
+          >Order Service</a
+        >
+      </section>
 
-        <!--Преимущества  -->
-        <section>
-            <h2>Особливості</h2>
-            <ul>
-                <li><h3>УВАГА ДО ДЕТАЛЕЙ</h3><p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li>
-                <li><h3>ПУНКТУАЛЬНІСТЬ</h3><p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li>
-                <li><h3>ПЛАНУВАННЯ</h3><p>Так само консультація з широким активом значною мірою зумовлює.</p></li>
-                <li><h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3><p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li>
-            </ul>
-        </section>
+      <!--Features  -->
+      <section class="section">
+        <h2 class="section-title">Features</h2>
 
-        <!-- Примеры работ -->
-        <section>
-        <h2>Чим ми займаємося</h2>
-        <ul>
-            <li><img src="./image/box 1.jpg" alt="box 1" width="370"></li>
-            <li><img src="./image/box 2.jpg" alt="box 2" width="370"></li>
-            <li><img src="./image/box 3.jpg" alt="box 3" width="370"></li>
+        <ul class="features-list list">
+          <li>
+            <h3 class="title">Strategy</h3>
+            <p class="title-description">
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </li>
+          <li>
+            <h3 class="title">Punctuality</h3>
+            <p class="title-description">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li>
+            <h3 class="title">Diligence</h3>
+            <p class="title-description">
+              Research and confirm brands that present the strongest digital
+              growth opportunities and minimize risk.
+            </p>
+          </li>
+          <li>
+            <h3 class="title">Technologies</h3>
+            <p class="title-description">Technologies</p>
+          </li>
         </ul>
-        </section>
+      </section>
 
-        <!-- Наша команда -->
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
-                <li><img src="./image/team/img.jpg" alt="img 1" width="270"><h3>Ігор Дем'яненко</h3><span>Product Designer</span></li>
-                <li><img src="./image/team/img-1.jpg" alt="img 2" width="270"><h3>Ольга Рєпіна</h3><span>Frontend Developer</span></li>
-                <li><img src="./image/team/img-2.jpg" alt="img 3" width="270"><h3>Микола Тарасов</h3><span>Marketing</span></li>
-                <li><img src="./image/team/img-3.jpg" alt="img 4" width="270"><h3>Михайло Єрмаков</h3><span>UI Designer</span></li>
-            /ul
-        </section>
+      <!-- Our team -->
+      <section class="section">
+        <h2 class="section-title">Our team</h2>
+        <ul class="team-list list">
+          <li>
+            <img src="./images/team/img-1.jpg" alt="img 1" width="264" />
+            <h3 class="title">Mark Guerrero</h3>
+            <span class="title-description">Product Designer</span>
+          </li>
+          <li>
+            <img src="./images/team/img-2.jpg" alt="img 2" width="264" />
+            <h3 class="title">Tom Ford</h3>
+            <span class="title-description">Frontend Developer</span>
+          </li>
+          <li>
+            <img src="./images/team/img-3.jpg" alt="img 3" width="264" />
+            <h3 class="title">Camila Garcia</h3>
+            <span class="title-description">Marketing</span>
+          </li>
+          <li>
+            <img src="./images/team/img-4.jpg" alt="img 4" width="264" />
+            <h3 class="title">Daniel Wilson</h3>
+            <span class="title-description">UI Designer</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Our Portfolio -->
+      <section class="section">
+        <h2 class="section-title">Our Portfolio</h2>
+        <ul class="portfolio-list list">
+          <li>
+            <img
+              src="./images/portfolio/img_1.jpg"
+              alt="Banking App"
+              width="360"
+            />
+            <h3 class="title">Banking App</h3>
+            <p class="title-description">App</p>
+          </li>
+          <li>
+            <img
+              src="./images/portfolio/img_2.jpg"
+              alt="Cashless Payment"
+              width="360"
+            />
+            <h3 class="title">Cashless Payment</h3>
+            <p class="title-description">Marketing</p>
+          </li>
+          <li>
+            <img
+              src="./images/portfolio/img_3.jpg"
+              alt="Meditation App"
+              width="360"
+            />
+            <h3>Meditation App</h3>
+            <p class="title-description">App</p>
+          </li>
+          <li>
+            <img
+              src="./images/portfolio/img_1.jpg"
+              alt="Taxi Service"
+              width="360"
+            />
+            <h3 class="title">Taxi Service</h3>
+            <p class="title-description">Marketing</p>
+          </li>
+          <li>
+            <img
+              src="./images/portfolio/img_2.jpg"
+              alt="Screen Illustrations"
+              width="360"
+            />
+            <h3 class="title">Screen Illustrations</h3>
+            <p class="title-description">Design</p>
+          </li>
+          <li>
+            <img
+              src="./images/portfolio/img_3.jpg"
+              alt="Online Courses"
+              width="360"
+            />
+            <h3 class="title">Online Courses</h3>
+            <p class="title-description">Marketing</p>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <!-- Подвал -->
     <footer>
-        <a href="/" target="_blank" rel="noopener noreferrer">WebStudio</a>
-        <h3>Adress</h3>
-        <address>
-            м. Київ, пр-т Лесі Українки, 26 </br>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a> </br>
-            <a href="tel:+380674567231">+380674567231</a>
-        </address>
-        
+      <a class="logo link" href="/" target="_blank" rel="noopener noreferrer"
+        ><span>WEB</span>STUDIO</a
+      >
+      <h3>Adress</h3>
+      <address class="contact-nav">
+        м. Київ, пр-т Лесі Українки, 26 <br />
+        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <br />
+        <a class="link" href="tel:+380674567231">+380674567231</a>
+      </address>
     </footer>
-    
-</body>
+  </body>
 </html>
